@@ -1,0 +1,115 @@
+
+body{
+    font-family: "Helvetica", Times, serif;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: cadetblue;
+}
+li a {
+    padding: 8px 16px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+a{  
+    color: black;
+    text-decoration: none; 
+}
+a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+#head{
+    border-style: solid;
+    border-color: black;
+    background-color: crimson;
+    width: 100%;
+    height: 15%;
+    display: flex;
+
+}
+#logo{
+    width: 70%;
+}
+#home{
+    text-align: center;    
+    width: 30%;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+}
+#menu{
+    width: 20%;
+}
+#destaque{
+    background-color: gray;
+    width: 80%;
+}
+#menu, #destaque{
+    border-style: solid;
+    border-color: black;
+}
+
+#footer{
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    height: 15%;
+    background-color: violet;
+    align-items: flex-end;
+}
+#main-produto{
+    display: flex;
+    flex-direction: column;
+    
+}
+#home-anchor{
+    text-decoration: none;
+}
+
+#add-produto{
+    background-color: gray;
+}
+#table-estoque{
+    width: 100%;
+    height: 70%;
+}
+table{
+    table-layout: fixed;
+    width: 100%;     
+}
+td,th{   
+    background-color: green;
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+}
+#funcionario{
+    background-color: gray;
+    width: 100%;
+    height: 70%;
+}
+
+
+

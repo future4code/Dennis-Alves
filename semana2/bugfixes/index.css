@@ -110,6 +110,10 @@ div img {
   *
   **/
 
+.container-do-search input{
+    border-style: none;
+    border-bottom: black 3px solid;
+}  
 div:nth-child(2),
 div:last-child {
     text-align: center;

@@ -120,7 +120,10 @@ table {
     margin-right: auto;
     text-align: center;
 }
-
+table img{
+    height: 35px;
+    width: 35px;
+}
 td button {
     background-color: #fadf63;
     width: 150px;

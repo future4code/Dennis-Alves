@@ -70,6 +70,7 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    
 }
 
 #container-de-descricao>ol {
@@ -78,6 +79,10 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #container-para-comprar>p {

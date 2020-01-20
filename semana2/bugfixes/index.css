@@ -148,13 +148,13 @@ td button:hover {
     height: 100px;
 }
 
-
+ /* opacidade ja estava definida */
 .container-do-search img:hover {
     opacity: 30%;
 }
 
 .container-do-search img:active {
-    /* opacity: 100%; */
+     opacity: 100%;
 }
 
 #back-button {

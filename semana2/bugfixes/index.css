@@ -79,6 +79,10 @@ div img {
 #container-de-descricao p{
     margin-top: 100px;
 }
+#container-de-descricao p{
+    
+    width: 210px;
+}
 
 #container-de-descricao>ol {
     padding: 15px 0px;

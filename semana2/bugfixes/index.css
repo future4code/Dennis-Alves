@@ -27,7 +27,7 @@ button:focus {
 }
 
 img {
-    width: 100px;
+    /* width: 100px; */
 }
 
 div>p:first-child {
@@ -35,7 +35,7 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    /* background: black; */
 }
 
 .botao-amarelo {
@@ -141,12 +141,13 @@ td button:hover {
     height: 100px;
 }
 
+
 .container-do-search img:hover {
     opacity: 30%;
 }
 
 .container-do-search img:active {
-    opacity: 100%;
+    /* opacity: 100%; */
 }
 
 #back-button {

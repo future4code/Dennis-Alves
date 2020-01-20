@@ -164,6 +164,11 @@ td button:hover {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    
+}
+.button{
+    text-align: center;
+    margin-top: 150px;
 }
 
 #back-button:hover {

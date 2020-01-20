@@ -5,6 +5,7 @@
   **/
 
 * {
+    /* problema de sombra azulada não acontece */
     margin: 0;
     padding: 0;
     /* fonte pedida ja estava no arquivo */

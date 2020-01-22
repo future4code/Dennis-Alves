@@ -1,0 +1,131 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.container{
+    height: 90%;
+    width: auto;
+
+}
+
+.main{
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-areas: 
+        "head head head head head head "
+        "item-1 item-1 item-2 item-2 item-3 item-3"
+        "item-4 item-4 item-5 item-5 item-6 item-6"
+        "item-7 item-7 item-7 item-8 item-8 item-8"
+        "item-9 item-9 item-10 item-10 item-11 item-11"
+;
+}   
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10, .item-11{
+    border: solid 1px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin: 8px;
+}
+.head{
+    background-color: red;
+    grid-area: head ;
+}
+.item-1{
+    grid-area: item-1;
+    background-color: blue;
+}
+.item-2{
+    grid-area: item-2;
+    background-color: yellow;
+}
+.item-3{
+    grid-area: item-3;
+    background-color: green;
+}
+.item-4{
+    grid-area: item-4;
+    background-color: blue;
+}
+.item-5{
+    grid-area: item-5;
+    background-color: yellow;
+}
+.item-6{
+    grid-area: item-6;
+    background-color: green;
+}
+.item-7{
+    grid-area: item-7;
+    color: white;
+    background-color: black;
+}
+.item-8{
+    grid-area: item-8;
+    color: white;
+    background-color: black;
+}
+.item-9{
+    background-color: white;
+    grid-area: item-9;
+}
+.item-10{
+    background-color: white;
+    grid-area: item-10;
+}
+.item-11{
+    background-color: white;
+    grid-area: item-11;
+}
+
+@media screen and (max-width: 600px){
+    .main{    
+            height: 100%;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr 1fr 1fr; 
+            grid-template-areas: 
+                "head head head head head head "
+                "item-1 item-1 item-1 item-2 item-2 item-2"
+                "item-3 item-3 item-3 item-3 item-3 item-3"
+                "item-4 item-4 item-4 item-5 item-5 item-5"
+                "item-6 item-6 item-6 item-6 item-6 item-6"
+                "item-7 item-7 item-7 item-8 item-8 item-8"
+                "item-9 item-9 item-9 item-10 item-10 item-10"
+                "item-11 item-11 item-11 item-11 item-11 item-11"
+        ; 
+    }
+}
+
+@media screen and (max-width: 400px){
+    .main{    
+            height: 100%;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+            grid-template-areas: 
+            "head head head head head head"
+            "item-1 item-1 item-1 item-1 item-1 item-1"
+            "item-2 item-2 item-2 item-2 item-2 item-2"
+            "item-3 item-3 item-3 item-3 item-3 item-3"
+            "item-4 item-4 item-4 item-4 item-4 item-4"
+            "item-5 item-5 item-5 item-5 item-5 item-5"
+            " item-6 item-6 item-6 item-6 item-6 item-6"
+            " item-7 item-7 item-7 item-7 item-7 item-7"
+            " item-8 item-8 item-8 item-8 item-8 item-8"
+            " item-9 item-9 item-9 item-9 item-9 item-9"
+            " item-10 item-10 item-10 item-10 item-10 item-10"
+            " item-11 item-11 item-11 item-11 item-11 item-11"; 
+    }
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10, .item-11{
+        border: solid 1px;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        margin: 5px;
+    }
+}

@@ -33,7 +33,7 @@ header{
     align-self: center;
     grid-area: busca;
     height: 50%;
-    width: fit-content;
+    width: 80%;
     font-size: 24px;
 }
 
@@ -41,15 +41,24 @@ main{
     height: max-content;
     width: 100%;
     grid-area: main;
-   
-    
+    display: grid;
+    grid-template-columns: 15% 85%; 
+    grid-template-areas: "menu-lateral menu-video";
+}
+.container-menu-lateral{
+    grid-area: menu-lateral;
+    border-right: solid 2px grey;
+}
+.container-menu-lateral a{
+    border: none;
 }
 .container-video{
     display: grid;
     height: max-content;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    grid-area: menu-video;
 
 
 }

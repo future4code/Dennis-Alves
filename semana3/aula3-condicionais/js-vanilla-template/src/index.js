@@ -77,6 +77,7 @@ let numero3 = Number(prompt("Digite o terceiro numero: "))
   // c. quando tem dois numeros igual não imprime nada!!
 
 // Ex. 5
+// https://1drv.ms/u/s!Ar0BGAVEHijugaVG6G0rkC3vDcc02A?e=UXTvHr
   let escolha = prompt("Possue esqueleto? (s para sim e n para não)")
   
   
@@ -116,5 +117,6 @@ let numero3 = Number(prompt("Digite o terceiro numero: "))
       else if(escolha == "n"){
         console.log(" é um invertebrado!!")
       }
+
       
   

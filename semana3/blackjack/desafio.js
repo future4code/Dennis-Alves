@@ -78,7 +78,7 @@ if(confirm("Deseja Jogar? sim ou não")){
             while(valComp <= valUser){// verifica se apontuação do computador é menor que a do usuario
                computador.push(comprarCarta())  // aad carta ao computador
                valComp += computador[computador.length -1].valor // incrementa a pontução do computador com o valor da ultima carta
-               textComp += usuario[usuario.length -1].texto  // incrementa o texto das cartas do computador com o texto da ultima carta
+               textComp += computador[computador.length -1].texto  // incrementa o texto das cartas do computador com o texto da ultima carta
                textComp += " " // eu gosto das coisas bem formatadas *.*
                //debugger;
             }// sai do while auxiliar quando empatar ou pasar a pontuação do usuario

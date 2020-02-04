@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js" defer></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>planner</title>
+  </head>
+  <body>
+    
+    <article class="container">
+      <label for="nova-tarefa">Nova Tarefa:</label>
+      <input type="text" name="nova-tarefa" id="nova-tarefa" >
+      <select name="dia-da-semana" id="dia-da-semana">
+          <option value="segunda">Segunda-Feira</option>
+          <option value="terca">Terça-Feira</option>
+          <option value="quarta">Quarta-Feira</option>
+          <option value="quinta">Quinta-Feira</option>
+          <option value="sexta">Sexta-Feira</option>
+          <option value="sabado">Sábado</option>
+          <option value="domingo">Domingo</option>
+      </select>
+      <select name="horario" id="horario"> </select>
+      <button onclick="addTarefa();">Criar Tarefa!</button>
+      <button onclick="apagarTarefas();">Apagar Tarefas!</button>
+    </article>
+
+    <main>
+        <article id="planner-segunda">
+          <p>Segunda</p>
+          <ul id="lista-segunda">
+          
+          </ul>
+        </article>
+        <article id="planner-terca">
+          <p>Terça</p>
+          <ul id="lista-terca">
+          
+          </ul>
+        </article>
+        <article id="planner-quarta">
+          <p>Quarta</p>
+          <ul id="lista-quarta">
+          
+          </ul>
+        </article>
+        <article id="planner-quinta">
+          <p>Quinta</p>
+          <ul id="lista-quinta">
+          
+          </ul>
+        </article>
+        <article id="planner-sexta">
+          <p>Sexta</p>
+          <ul id="lista-sexta">
+          
+          </ul>
+        </article>
+        <article id="sabado">
+          <p>Sabado</p>
+          <ul id="lista-sabado">
+          
+          </ul>
+        </article>
+        <article id="domingo">
+          <p>Domingo</p>
+          <ul id="lista-domingo">
+          
+          </ul>
+        </article>
+        
+    </main>
+  </body>
+</html>

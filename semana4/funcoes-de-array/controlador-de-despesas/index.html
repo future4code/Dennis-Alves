@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>controlador de despesas</title>
+  </head>
+  <body>
+    <main>
+      <article id="despesas">
+          <h1>Controlador de despesas</h1>
+          <article id="entrada-despesas">
+            <h3>Cadastrar despesas</h3>
+            <label id="label-valor" for="entrada-valor">Valor</label>
+            <input type="number" name="entrada-valor" id="entrada-valor"">
+            <label id="label-tipo" for="entrada-tipo"></label>
+            <select name="entrada-tipo" id="entrada-tipo">
+              <option value="nada">Escolha um Tipo</option>
+              <option value="alimentacao">Alimentação</option>
+              <option value="combustivel">Combustivel</option>
+              <option value="roupa">Vestimentas</option>
+              <option value="estudo">Estudos</option> 
+            </select>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="20" rows="5"></textarea>
+            <button onclick="cadastrarDespesas();">Cadastrar</button>
+          </article>
+      </article>
+
+      <article name="despesas-detalhadas">
+        <article name="despesas-detalhadas-filtro">
+          <h1>Despesas Detalhadas</h1>
+          <select name="filtro-tipo" id="filtro-tipo">
+            <option value="nada">Escolha um Tipo</option>
+            <option value="alimentacao">Alimentação</option>
+            <option value="combustivel">Combustivel</option>
+            <option value="roupa">Vestimentas</option>
+            <option value="estudo">Estudos</option> 
+          </select>
+          <label for="valor-minimo">Valor minimo</label>
+          <input type="number" name="valor-minimo" id="valor-minimo">
+          <label for="valor-max">Valor Maximo</label>
+          <input type="number" name="valor-max" id="valor-max">
+          <button onclick="filtrarDespesas();">filtrar</button>
+          <button onclick="printLista();">Limpar FIltros</button>
+        </article>
+      </article>
+      <button onclick="ordenar();">Ordernar</button>
+      <article name="lista-despesas" id="lista-despesas">
+        
+        <p>lista despesas</p>
+      </article>
+      <article name= extrato>
+        <h1>Extrato</h1>
+        <h3>Valor Total:</h3>
+        <p name="total" id="total"></p>
+      </article>
+    </main>
+  </body>
+</html>

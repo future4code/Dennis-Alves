@@ -26,3 +26,21 @@ ser usado como indice de repetições e ele é usado como compração no primeri
 
 */
 
+/*Exercícios de Lógica de Programação
+1.  podemos usar for,for each e while
+
+for (let i = 0; i < array.length; i++) {
+    array[i];  
+}
+
+array.forEach(elementoDoIndice => {
+    console.log(elementoDoIndice)
+});
+
+let i = 0
+while(i < array.length){
+    console.log(array.lenght)
+    i++
+}
+*/
+

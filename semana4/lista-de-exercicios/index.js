@@ -122,5 +122,16 @@ function ordenar(array){
     console.log("o segundo maior é: "+array[2]+ " e o segundo menor é:" +array[array.length -2] )
 }
 ordenar(arr)
-    
+2. 
+const alerta =()=>{alert("Hello Future4");}
+alerta()    
+
 */
+
+/*Exercícios de Objetos
+1. arrays são vetores onde podemos adicionar variaveis dessa forma temos uma unica variaveis com varios itens 
+objetos são estruturas para representar dados mais complexos, usamos objetos apra fazer abstraçoes e colocar
+suas propriedades e metodos em uma unica estrutura. 
+
+
+ */

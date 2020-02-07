@@ -42,5 +42,12 @@ while(i < array.length){
     console.log(array.lenght)
     i++
 }
+2.
+a)false
+b)true
+c)true
+d)true
+e)true
+
 */
 

@@ -17,5 +17,12 @@ Quantidade total de números14
 6
 8
 
+4.esse codigo faz a verificação se numero é maior e se menor em um laço de repetição for, a variavel let numero1 recebe infinity 
+que deve se tratar de um valor infinito (não me recorod dessa funçao ser mostrada em aula) no laço for é criado let numero para
+ser usado como indice de repetições e ele é usado como compração no primerio e segundo if do laço, no primeiro é comparado se numero 
+é menor que numero1  e no segundo if é comparadose numero é maior de numero2 durante a execução do for, no final é impresso por console log:
+-10
+1590
+
 */
 

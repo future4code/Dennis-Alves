@@ -261,13 +261,14 @@ function semPermicao(array){
     })
     return novaLista
 }
- */
- const consultas = [
+4.
+const consultas = [
  	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
  	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
  	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
  	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
  ]
+ //a. 
  function emailNaoCancelado(array){
      const novaLista = array.filter((item)=>{
          return item.cancelada === true
@@ -296,7 +297,7 @@ function semPermicao(array){
      });
      return email
  }
-
+//b. 
  function emailCancelado(array){
     const novaLista = array.filter((item)=>{
         return item.cancelada === false
@@ -319,3 +320,22 @@ function semPermicao(array){
     });
     return email
 }
+5.
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+function atualizarSaldo(array){
+    array.forEach(cliente => {
+       const compras = cliente.compras.reduce((soma,atual)=>{
+           return soma + atual
+       },0)
+
+        cliente.saldoTotal -= compras
+    });
+}
+ */

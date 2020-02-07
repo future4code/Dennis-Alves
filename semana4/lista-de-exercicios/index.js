@@ -166,7 +166,22 @@ function filme(){
     });
     console.log("Venha assistir ao filme: "+ filmeFavorito.titulo+", de "+ filmeFavorito.ano +
     ", dirigido por "+ filmeFavorito.diretor +" e estrelado por " + listaAtor )
+}4.
+class Pessoa{
+    constructor(nome,idade,email,endereco){
+        this.nome = nome
+        this.idade = idade
+        this.email = email
+        this.endereco = endereco
+    }
+    
+}
+ const pessoa = new Pessoa("dennis",36,"dennis@gmail.com","rua da minha casa numero aleatorio")
+
+function anonimizarPessoa(){
+    const novaPessoa = new Pessoa(pessoa.nome,pessoa.idade,pessoa.email,pessoa.endereco)
+    novaPessoa.nome = "ANÔNIMO "
+    return novaPessoa
 }
  */
-
 

@@ -11,5 +11,11 @@ valor(150)*1.1
 a const segundoMontante recebe o retorno da função investeDinheiro com os paremetros Tesouro Direto e 200 que nocaso ira
 retornar a menssagem de alerta TIPO DE INVESTIMENTO INFORMADO INCORRETO ambas constantes serão impressas pelo console log
 
+3.o codigo desse exercicio faz a verificação de numeros pares em uma laço de repetição for, durante a verificação a array1
+recebe os elementos par de numeros e a array2 recebe o restante dos elementos. depois é impresso o tamanho de cada array por console log:
+Quantidade total de números14
+6
+8
+
 */
 

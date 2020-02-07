@@ -49,5 +49,20 @@ c)true
 d)true
 e)true
 
+3. o codigo não funciona pois não tem o valor na variavel quantidadeDeNumerosPares e nem o a checagem para numeros par e 
+falta incrementar i
+
+const quantidadeDeNumerosPares = prompt("digite um numero")
+let i = 0
+
+while(i <= quantidadeDeNumerosPares) {
+    if(i%2 = 0){
+        console.log(i)
+        i++
+    }
+
+  
+}
+
 */
 

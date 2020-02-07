@@ -63,6 +63,52 @@ while(i <= quantidadeDeNumerosPares) {
 
   
 }
+4. 
+const a = prompt("digite um numero")
+const b = prompt("digite um numero")
+const c = prompt("digite um numero")
+
+if(a === b && a === c){
+    console.log("Equilatero")
+}
+else if(a === b || a === c){
+    console.log("Isósceles")
+}
+else{
+    console.log("Escaleno")
+}
+
+5. 
+const a = prompt("digite um numero")
+const b = prompt("digite um numero")
+
+if( a > b ){
+    console.log("o maior é: " + a)
+}
+
+else{
+    console.log("o maior é: " + b)
+}
+
+if( a % b === 0 ){
+    console.log(a+ "não é divisivel por " + b)
+}
+else{
+    console.log(a+ "é divisivel por " + b)
+}
+
+if( b % a === 0 ){
+    console.log(b+ "não é divisivel por " + a)
+}
+else{
+    console.log(b+ "é divisivel por " + a)
+}
+if(( a-b )< 0){
+    console.log("a diferença entre eles é " + ((a-b)*-1))
+}
+else{
+    console.log("a diferença entre eles é " + (a-b))
+}
 
 */
 

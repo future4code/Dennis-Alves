@@ -184,4 +184,27 @@ function anonimizarPessoa(){
     return novaPessoa
 }
  */
+/*Exercícios de Funções de array
+ 1. 
+ const lista =[
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+//a
+function maiorDeIdade(array){
+    const novaLista = array.filter((item)=>{
+        return (item.idade >= 20)
+    })
+    return novaLista
+}
+//b
+function menorDeIdade(array){
+    const novaLista = array.filter((item)=>{
+        return (item.idade < 20)
+    })
+    return novaLista
+}
+ */
 

@@ -161,7 +161,6 @@ function filme(){
     }
     let listaAtor = " " 
     filmeFavorito.atoresAtrizes.forEach(ator => {
-        debugger
         listaAtor += ator+ ", " 
     });
     console.log("Venha assistir ao filme: "+ filmeFavorito.titulo+", de "+ filmeFavorito.ano +
@@ -206,5 +205,37 @@ function menorDeIdade(array){
     })
     return novaLista
 }
- */
+2.
+const array = [1, 2, 3, 4, 5, 6]
 
+function multiplicaPor2(arr){
+    
+    const mult =[]
+     arr.forEach((numero) =>{
+        mult.push(numero * 2)
+    })
+    return mult
+}
+
+function multiplicaPor3(arr){
+    const mult = []
+    arr.forEach(numero =>{
+        mult.push(String((numero * 3)))
+    })
+    return mult
+}
+
+function parOuImpar(arr){
+    const mult =[]
+     arr.forEach(numero =>{
+        if(numero%2 === 0){
+            mult.push(String(numero) + " é Par")
+        }
+        else{
+            mult.push(String(numero) + " é Impar")
+        }
+        
+    })
+    return mult
+}
+ */

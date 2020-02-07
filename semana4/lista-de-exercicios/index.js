@@ -143,7 +143,30 @@ function criaRetangulo (lado1,lado2){
     }
     return retangulo
 }
-
+3.
+const filmeFavorito ={
+    titulo: "", 
+    ano: "", 
+    diretor: "", 
+    atoresAtrizes: []   
+}
+function filme(){
+    filmeFavorito.titulo = prompt("Digite o titulo")
+    filmeFavorito.ano = prompt("Digite o ano")
+    filmeFavorito.diretor = prompt("Digite o diretor")
+    filmeFavorito.atoresAtrizes.push(prompt("digite o nome do ator/atriz"))
+    filmeFavorito.atoresAtrizes.push(prompt("digite o nome do ator/atriz"))
+    while(prompt("deseja adicionar mais atores/atrizes? (s ou n)") === "s"){
+        filmeFavorito.atoresAtrizes.push(prompt("digite o nome do ator/atriz"))
+    }
+    let listaAtor = " " 
+    filmeFavorito.atoresAtrizes.forEach(ator => {
+        debugger
+        listaAtor += ator+ ", " 
+    });
+    console.log("Venha assistir ao filme: "+ filmeFavorito.titulo+", de "+ filmeFavorito.ano +
+    ", dirigido por "+ filmeFavorito.diretor +" e estrelado por " + listaAtor )
+}
  */
 
 

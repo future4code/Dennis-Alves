@@ -133,5 +133,17 @@ alerta()
 objetos são estruturas para representar dados mais complexos, usamos objetos apra fazer abstraçoes e colocar
 suas propriedades e metodos em uma unica estrutura. 
 
+2.
+function criaRetangulo (lado1,lado2){
+    const retangulo = {
+        lagura: lado1,
+        altura: lado2,
+        perimetro: (2 * (lado1 + lado2)),
+        area: (lado1 * lado2)
+    }
+    return retangulo
+}
 
  */
+
+

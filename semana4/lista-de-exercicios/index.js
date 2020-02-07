@@ -109,6 +109,18 @@ if(( a-b )< 0){
 else{
     console.log("a diferença entre eles é " + (a-b))
 }
-
 */
 
+/*Exercícios de Funções
+1.
+const arr =[2,4,1,78,3,43,49,-2,7]
+function ordenar(array){
+       
+    array.sort((menor,maior)=>{ 
+       return maior - menor
+    })
+    console.log("o segundo maior é: "+array[2]+ " e o segundo menor é:" +array[array.length -2] )
+}
+ordenar(arr)
+    
+*/

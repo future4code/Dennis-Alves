@@ -262,4 +262,60 @@ function semPermicao(array){
     return novaLista
 }
  */
+ const consultas = [
+ 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+ 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+ 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+ 	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+ ]
+ function emailNaoCancelado(array){
+     const novaLista = array.filter((item)=>{
+         return item.cancelada === true
+     })
+     const email =[]
 
+     novaLista.forEach((consulta) => {
+        let texto =""
+         texto += "Olá, " 
+         if(consulta.genero === "feminino" ){
+             texto += "Sra."
+          }
+         else if(consulta.genero === "masculino"){
+             texto += "Sr." 
+          }
+ 
+          texto += consulta.nome +". Estamos enviando esta mensagem para"
+          if(consulta.genero === "feminino" ){
+             texto += " lembrá-la "
+          }
+         else if(consulta.genero === "masculino"){
+             texto += " lembrá-lo" 
+          }
+         texto += " da sua consulta no dia "+ consulta.dataDaConsulta +". Por favor, acuse o recebimento deste e-mail."
+         email.push(texto)
+     });
+     return email
+ }
+
+ function emailCancelado(array){
+    const novaLista = array.filter((item)=>{
+        return item.cancelada === false
+    })
+    const email =[]
+
+    novaLista.forEach((consulta) => {
+       let texto =""
+        texto += "Olá, " 
+        if(consulta.genero === "feminino" ){
+            texto += "Sra."
+         }
+        else if(consulta.genero === "masculino"){
+            texto += "Sr." 
+         }
+
+         texto += consulta.nome +". Infelizmente, sua consulta marcada para o dia "+
+          consulta.dataDaConsulta +". foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la"
+        email.push(texto)
+    });
+    return email
+}

@@ -1,0 +1,157 @@
+html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body{
+  
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  grid-template-rows: 10% 2fr 10%;
+  grid-template-areas: "header" "main" "footer";
+
+}
+header{
+  width: 100%;
+  background-color: orange;
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr 3fr 1fr ;
+  grid-template-areas: "brand . busca";
+
+}
+#brand{
+  grid-area: brand;
+  align-self: center;
+  font-size: 32px;
+  margin: 5%;
+}
+
+#busca{
+  align-self: center;
+  grid-area: busca;
+  height: 50%;
+  width: 80%;
+  font-size: 24px;
+}
+
+main{
+  height: max-content;
+  width: 100%;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 15% 85%; 
+  grid-template-areas: "menu-lateral menu-video";
+}
+.container-menu-lateral{
+  grid-area: menu-lateral;
+  border-right: solid 2px grey;
+}
+.container-menu-lateral a{
+  border: none;
+}
+.container-video{
+  display: grid;
+  height: max-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-area: menu-video;
+
+
+}
+
+a{
+  display: flex;
+  flex-direction: column;
+  border: solid 2px;
+  text-decoration: none;
+  color: black;
+
+}
+a, p{
+  margin: 2%;
+}
+video{
+  height: 200px;
+  border: solid 2px;
+}
+footer{
+  grid-area: footer;
+  background-color: darkgreen;
+  margin-bottom: 0;
+}
+h2{
+  margin-left: 5%;
+}
+@media only screen and (max-width: 1280px) {
+  
+  .container-menu-lateral{
+      display: none;
+  }
+  
+main{
+  height: max-content;
+  width: 100%;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+  .container-video{
+      display: grid;
+      height: max-content;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+  
+  
+  }
+  #busca{
+      width: 70%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  
+  .container-menu-lateral{
+      display: none;
+  }
+
+  .container-video{
+      display: grid;
+      height: max-content;
+      grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  }
+  #brand{
+      font-size: 16px;
+  }
+  #busca{
+      height: 30%;
+      width: 70%;
+      font-size: 16px;
+  }
+  body{
+  
+      display: grid;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      grid-template-rows: 5% 1fr 10%;
+      grid-template-areas: "header" "main" "footer";
+  
+  }
+  header{
+      width: 100%;
+      background-color: orange;
+      display: grid;
+      grid-area: header;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-areas: "brand  busca";
+  
+  }
+  h2{
+      margin: 0;
+  }
+  
+}

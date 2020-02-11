@@ -1,0 +1,13 @@
+.corpo{
+    
+    grid-area: corpo;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+.nome{
+    display: flex;
+    justify-content: center;
+    
+}

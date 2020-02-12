@@ -1,0 +1,14 @@
+.item-pequeno{
+    margin: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.imagem-item-pequeno{
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.titulo{
+    margin-right: 5px;
+}

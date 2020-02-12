@@ -1,0 +1,22 @@
+.botao{
+    border: black 2px solid;
+    border-radius:25px;
+    background-color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+.icone{
+    height: 30px;
+    border-radius:20px;
+    margin-right: 5%;
+    align-self: center;  
+}
+.botao-grafico{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}

@@ -1,0 +1,26 @@
+.item-grande{
+    margin: 5px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        " . nome"
+        "imagem resumo"
+    ;
+
+}
+.imagem-item-grande{
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 80px;
+    border-radius: 50%;
+    grid-area: imagem ;
+}
+.nome{
+    justify-self: left;
+    grid-area: nome;
+}
+.resumo{
+    grid-area: resumo;
+}

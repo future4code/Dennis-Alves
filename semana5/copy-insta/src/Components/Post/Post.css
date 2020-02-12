@@ -1,0 +1,6 @@
+.post{
+    border: black solid 2px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,2869 @@
+{
+	"info": {
+		"_postman_id": "a6932064-28e6-4285-bad8-01857827a1b1",
+		"name": "Entrega aula 24 - https",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ex.1",
+			"item": [
+				{
+					"name": "createPlaylist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Country\"\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"createPlaylist"
+							]
+						},
+						"description": "Ex.1 criando lista \"country\""
+					},
+					"response": [
+						{
+							"name": "createPlaylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "authentication-token",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/playlists/createPlaylist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"playlists",
+										"createPlaylist"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "createPlaylist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Country\"\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"createPlaylist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPlaylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "authentication-token",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/playlists/createPlaylist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"playlists",
+										"createPlaylist"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "createPlaylist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Eletronica\"\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"createPlaylist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPlaylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "authentication-token",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/playlists/createPlaylist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"playlists",
+										"createPlaylist"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.2",
+			"item": [
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getAllPlaylists"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.3",
+			"item": [
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"Into My Arms\",\n        \"artist\": \"Nick Cave & The Bad Seeds \",\n        \"url\": \"https://www.youtube.com/watch?v=LnHoqHscTKE\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"Lay down Sally\",\n        \"artist\": \"Eric Clapton\",\n        \"url\": \"https://www.youtube.com/watch?v=9hQqP6RNnDE\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"8f4e63d8-1342-47cf-b5ed-5ad4b8bc2e72\",\n\t\"music\": {\n\t\t\"name\": \"Your Man\",\n        \"artist\": \"Josh Turner\",\n        \"url\": \"https://www.youtube.com/watch?v=nADTbWQof7Y\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"8f4e63d8-1342-47cf-b5ed-5ad4b8bc2e72\",\n\t\"music\": {\n\t\t\"name\": \"Would You Go With Me\",\n        \"artist\": \"Josh Turner\",\n        \"url\": \"https://www.youtube.com/watch?v=uFz61X2PQTw\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"ad69fb1e-c549-45f5-a1d5-4c96d84b68e6\",\n\t\"music\": {\n\t\t\"name\": \"Odd Look\",\n        \"artist\": \"Kavinsky\",\n        \"url\": \"https://www.youtube.com/watch?v=qT0iQRjHbW4\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"ad69fb1e-c549-45f5-a1d5-4c96d84b68e6\",\n\t\"music\": {\n\t\t\"name\": \"Robot Rock\",\n        \"artist\": \"Daft Punk\",\n        \"url\": \"https://www.youtube.com/watch?v=sFZjqVnWBhc\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.4",
+			"item": [
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/4ea35b62-d975-4c17-ba28-17eb62b66bfc",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"4ea35b62-d975-4c17-ba28-17eb62b66bfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getAllPlaylists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/8f4e63d8-1342-47cf-b5ed-5ad4b8bc2e72",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"8f4e63d8-1342-47cf-b5ed-5ad4b8bc2e72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/ad69fb1e-c549-45f5-a1d5-4c96d84b68e6",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"ad69fb1e-c549-45f5-a1d5-4c96d84b68e6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.5",
+			"item": [
+				{
+					"name": "searchPlaylist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/searchPlaylist?playlistName=Rock",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"searchPlaylist"
+							],
+							"query": [
+								{
+									"key": "playlistName",
+									"value": "Rock"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"Sultans Of Swing\",\n\t\t\"artist\": \"Dire Straits\",\n\t\t\"url\": \"https://www.youtube.com/watch?v=0fAQhSRLQnM\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"Free Bird\",\n\t\t\"artist\": \"Lynyrd Skynyrd\",\n\t\t\"url\": \"https://www.youtube.com/watch?v=D0W1v0kOELA\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.6",
+			"item": [
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/4ea35b62-d975-4c17-ba28-17eb62b66bfc",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"4ea35b62-d975-4c17-ba28-17eb62b66bfc"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.7",
+			"item": [
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"More Than a Feeling\",\n        \"artist\": \"Boston\",\n        \"url\": \"https://www.youtube.com/watch?v=qIFsCCsfUkI\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.8",
+			"item": [
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/4ea35b62-d975-4c17-ba28-17eb62b66bfc",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"4ea35b62-d975-4c17-ba28-17eb62b66bfc"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.9",
+			"item": [
+				{
+					"name": "removeMusicFromPlaylist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/removeMusicFromPlaylist?playlistId=4ea35b62-d975-4c17-ba28-17eb62b66bfc&musicId=bd39a0ff-53d7-40c9-8aae-2a6571cb7bb6",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"removeMusicFromPlaylist"
+							],
+							"query": [
+								{
+									"key": "playlistId",
+									"value": "4ea35b62-d975-4c17-ba28-17eb62b66bfc"
+								},
+								{
+									"key": "musicId",
+									"value": "bd39a0ff-53d7-40c9-8aae-2a6571cb7bb6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"Here I Go Again\",\n        \"artist\": \"Whitsnake\",\n        \"url\": \"https://www.youtube.com/watch?v=OXWryKOhKxc\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"4ea35b62-d975-4c17-ba28-17eb62b66bfc\",\n\t\"music\": {\n\t\t\"name\": \"Pour Some Sugar On Me\",\n        \"artist\": \"Def Leppard\",\n        \"url\": \"https://www.youtube.com/watch?v=Rqs4cMyMLnY\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.10",
+			"item": [
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/4ea35b62-d975-4c17-ba28-17eb62b66bfc",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"4ea35b62-d975-4c17-ba28-17eb62b66bfc"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ex.11",
+			"item": [
+				{
+					"name": "deletePlaylist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/deletePlaylist?playlistId=8f4e63d8-1342-47cf-b5ed-5ad4b8bc2e72",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"deletePlaylist"
+							],
+							"query": [
+								{
+									"key": "playlistId",
+									"value": "8f4e63d8-1342-47cf-b5ed-5ad4b8bc2e72"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePlaylist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/deletePlaylist?playlistId=4ea35b62-d975-4c17-ba28-17eb62b66bfc",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"deletePlaylist"
+							],
+							"query": [
+								{
+									"key": "playlistId",
+									"value": "4ea35b62-d975-4c17-ba28-17eb62b66bfc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePlaylist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/deletePlaylist?playlistId=ad69fb1e-c549-45f5-a1d5-4c96d84b68e6",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"deletePlaylist"
+							],
+							"query": [
+								{
+									"key": "playlistId",
+									"value": "ad69fb1e-c549-45f5-a1d5-4c96d84b68e6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getAllPlaylists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPlaylist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Country\"\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"createPlaylist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPlaylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "authentication-token",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/playlists/createPlaylist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"playlists",
+										"createPlaylist"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getAllPlaylists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"9279ea95-84f2-4caf-8c27-0a9b9fd412d0\",\n\t\"music\": {\n\t\t\"name\": \"Your Man\",\n        \"artist\": \"Josh Turner\",\n        \"url\": \"https://www.youtube.com/watch?v=nADTbWQof7Y\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"9279ea95-84f2-4caf-8c27-0a9b9fd412d0\",\n\t\"music\": {\n\t\t\"name\": \"Would You Go With Me\",\n        \"artist\": \"Josh Turner\",\n        \"url\": \"https://www.youtube.com/watch?v=uFz61X2PQTw\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"9279ea95-84f2-4caf-8c27-0a9b9fd412d0\",\n\t\"music\": {\n\t\t\"name\": \"Riders In the Sky\",\n        \"artist\": \"Johnny Cash\",\n        \"url\": \"https://www.youtube.com/watch?v=0Fhy8o7ufi8\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/9279ea95-84f2-4caf-8c27-0a9b9fd412d0",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"9279ea95-84f2-4caf-8c27-0a9b9fd412d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeMusicFromPlaylist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/removeMusicFromPlaylist?playlistId=9279ea95-84f2-4caf-8c27-0a9b9fd412d0&musicId=c97a2243-8f9e-48f7-90f8-2172ac5de8ef",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"removeMusicFromPlaylist"
+							],
+							"query": [
+								{
+									"key": "playlistId",
+									"value": "9279ea95-84f2-4caf-8c27-0a9b9fd412d0"
+								},
+								{
+									"key": "musicId",
+									"value": "c97a2243-8f9e-48f7-90f8-2172ac5de8ef"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/9279ea95-84f2-4caf-8c27-0a9b9fd412d0",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"9279ea95-84f2-4caf-8c27-0a9b9fd412d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPlaylist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Classica\"\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"createPlaylist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPlaylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "authentication-token",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/playlists/createPlaylist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"playlists",
+										"createPlaylist"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "createPlaylist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Eletronica\"\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"createPlaylist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPlaylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "authentication-token",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/playlists/createPlaylist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"playlists",
+										"createPlaylist"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getAllPlaylists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"fd6897fd-f66e-41f5-b4b0-64d57d11217f\",\n\t\"music\": {\n\t\t\"name\": \"Nocturne op.9 No.2\",\n        \"artist\": \"Chopin\",\n        \"url\": \"https://www.youtube.com/watch?v=9E6b3swbnWg\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"fd6897fd-f66e-41f5-b4b0-64d57d11217f\",\n\t\"music\": {\n\t\t\"name\": \"Moonlight Sonata, III Presto Agitato\",\n        \"artist\": \"Beethoven\",\n        \"url\": \"https://www.youtube.com/watch?v=zucBfXpCA6s\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"db128ba3-0b58-4b1f-a15e-772e7737e09e\",\n\t\"music\": {\n\t\t\"name\": \"Odd Look\",\n        \"artist\": \"Kavinsky\",\n        \"url\": \"https://www.youtube.com/watch?v=qT0iQRjHbW4\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMusicToPlaylist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"type": "text",
+								"value": "Dennis"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"playlistId\": \"db128ba3-0b58-4b1f-a15e-772e7737e09e\",\n\t\"music\": {\n\t\t\"name\": \"Robot Rock\",\n        \"artist\": \"Daft Punk\",\n        \"url\": \"https://www.youtube.com/watch?v=sFZjqVnWBhc\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/addMusicToPlaylist",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"addMusicToPlaylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/fd6897fd-f66e-41f5-b4b0-64d57d11217f",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"fd6897fd-f66e-41f5-b4b0-64d57d11217f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/db128ba3-0b58-4b1f-a15e-772e7737e09e",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"db128ba3-0b58-4b1f-a15e-772e7737e09e"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "desafios",
+			"item": [
+				{
+					"name": "Ex.1",
+					"item": [
+						{
+							"name": "getAllPlaylists",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getAllPlaylists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/9279ea95-84f2-4caf-8c27-0a9b9fd412d0",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"9279ea95-84f2-4caf-8c27-0a9b9fd412d0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/fd6897fd-f66e-41f5-b4b0-64d57d11217f",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"fd6897fd-f66e-41f5-b4b0-64d57d11217f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/db128ba3-0b58-4b1f-a15e-772e7737e09e",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"db128ba3-0b58-4b1f-a15e-772e7737e09e"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ex.2",
+					"item": [
+						{
+							"name": "createPlaylist",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Classica\"\n}"
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"createPlaylist"
+									]
+								},
+								"description": "\"message\": \"There already is a playlist with a similiar name.\"\ne erro 400 "
+							},
+							"response": [
+								{
+									"name": "createPlaylist",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "auth",
+												"value": "authentication-token",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/playlists/createPlaylist",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"playlists",
+												"createPlaylist"
+											]
+										}
+									},
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ex.3",
+					"item": [
+						{
+							"name": "searchPlaylist",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/searchPlaylist?playlistName=samba",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"searchPlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistName",
+											"value": "samba"
+										}
+									]
+								},
+								"description": "{\r\n    \"result\": {\r\n        \"quantity\": 0,\r\n        \"playlist\": []\r\n    }\r\n}\r\nretorna uma array vazia e sem erro"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ex.4",
+					"item": [
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/db128ba3-0b58-4b1f-a15e-772e7737e09e",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"db128ba3-0b58-4b1f-a15e-772e7737e09e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "removeMusicFromPlaylist",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/removeMusicFromPlaylist?playlistId=fd6897fd-f66e-41f5-b4b0-64d57d11217f&musicId=id-inexistente",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"removeMusicFromPlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistId",
+											"value": "fd6897fd-f66e-41f5-b4b0-64d57d11217f"
+										},
+										{
+											"key": "musicId",
+											"value": "id-inexistente"
+										}
+									]
+								},
+								"description": "\"message\": \"Music not found\""
+							},
+							"response": []
+						},
+						{
+							"name": "removeMusicFromPlaylist",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/removeMusicFromPlaylist?playlistId=fd6897fd-f66e-41f5-b4b0-64d57d11217f&musicId=",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"removeMusicFromPlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistId",
+											"value": "fd6897fd-f66e-41f5-b4b0-64d57d11217f"
+										},
+										{
+											"key": "musicId",
+											"value": ""
+										}
+									]
+								},
+								"description": "\"message\": \"Playlist id, music id or auth token are missing\"\r\n}"
+							},
+							"response": []
+						},
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/id-inexistente",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"id-inexistente"
+									]
+								},
+								"description": "\"message\": \"Playlist not found\"\ne msg de erro 404"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ex.5",
+					"item": [
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/id-inexistente",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"id-inexistente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										""
+									]
+								},
+								"description": "é redirecionado para uma pagina com uma mensagem de erro Cannot GET /playlists/getPlaylistMusics/\n\ne retorna erro 404"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ex.6",
+					"item": [
+						{
+							"name": "createPlaylist",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"\"\n}"
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"createPlaylist"
+									]
+								},
+								"description": "retorna erro 400"
+							},
+							"response": [
+								{
+									"name": "createPlaylist",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "auth",
+												"value": "authentication-token",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"playlist-name\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/playlists/createPlaylist",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"playlists",
+												"createPlaylist"
+											]
+										}
+									},
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ex.7",
+					"item": [
+						{
+							"name": "getAllPlaylists",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getAllPlaylists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePlaylist",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/deletePlaylist?playlistId=9279ea95-84f2-4caf-8c27-0a9b9fd412d0",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"deletePlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistId",
+											"value": "9279ea95-84f2-4caf-8c27-0a9b9fd412d0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePlaylist",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/deletePlaylist?playlistId=fd6897fd-f66e-41f5-b4b0-64d57d11217f",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"deletePlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistId",
+											"value": "fd6897fd-f66e-41f5-b4b0-64d57d11217f"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePlaylist",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/deletePlaylist?playlistId=db128ba3-0b58-4b1f-a15e-772e7737e09e",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"deletePlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistId",
+											"value": "db128ba3-0b58-4b1f-a15e-772e7737e09e"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllPlaylists",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getAllPlaylists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "searchPlaylist",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"type": "text",
+										"value": "Dennis"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/searchPlaylist?playlistName=Classica",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"searchPlaylist"
+									],
+									"query": [
+										{
+											"key": "playlistName",
+											"value": "Classica"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPlaylistMusics/:playlistId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "auth",
+										"value": "Dennis",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/9279ea95-84f2-4caf-8c27-0a9b9fd412d0",
+									"protocol": "https",
+									"host": [
+										"us-central1-spotif4",
+										"cloudfunctions",
+										"net"
+									],
+									"path": [
+										"api",
+										"playlists",
+										"getPlaylistMusics",
+										"9279ea95-84f2-4caf-8c27-0a9b9fd412d0"
+									]
+								},
+								"description": "\"message\": \"Playlist not found\" e erro 404"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "getPlaylistMusics/:playlistId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getPlaylistMusics/fd6897fd-f66e-41f5-b4b0-64d57d11217f",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getPlaylistMusics",
+								"fd6897fd-f66e-41f5-b4b0-64d57d11217f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPlaylists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "Dennis",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-spotif4.cloudfunctions.net/api/playlists/getAllPlaylists",
+							"protocol": "https",
+							"host": [
+								"us-central1-spotif4",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"api",
+								"playlists",
+								"getAllPlaylists"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

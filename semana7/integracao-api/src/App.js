@@ -8,8 +8,25 @@ const Render = styled.div`
   flex-direction: column;
   
 `
+const Nav = styled.div`
+  display:flex;
+  justify-content: space-between;
 
-const Container = styled.div`
+`
+const ContainerBusca = styled.div`
+  display:flex;
+  flex-direction:row;
+`
+const ContainerNomeBusca = styled.div`
+  margin:5px;
+`
+const ContainerEmailBusca = styled.div`
+  margin:5px;
+`
+const BotaoBuscar = styled.button`
+  margin:5px;
+`
+const ContainerEntrada = styled.div`
  border:solid 2px black;
  
  display:flex;
@@ -188,7 +205,7 @@ class App extends React.Component {
       })
       this.getDados()
     }).catch((erro)=>{
-      window.alert("não foi possivel carregar o usuario o usuario")
+      window.alert("não foi possivel carregar o usuario")
       console.log(erro)
     })
 
@@ -224,6 +241,36 @@ class App extends React.Component {
     })
   }
 
+  buscarUsario =()=>{
+    
+      const request = axios.get(`${baseUrl}/searchUsers?email=${this.state.email}&name=${this.state.nome}`,{
+        headers: {
+          "api-token": "Dennis"
+        }
+      })
+      request.then((response)=>{
+        this.setState({
+          dados: response.data.result,
+          nome: "",
+          email: ""
+        })
+        
+        if(this.state.dados.length === 0){
+          window.alert("O usuario ou email não existe")
+          this.setState({
+            nome: "",
+            email: ""
+          })
+          this.getDados()
+        }
+
+      }).catch((erro)=>{
+        window.alert("não foi possivel carregar o usuario ")
+        console.log(erro)
+      })
+    
+  }
+
   vaiPraEntrada=()=>{
     
     const opcao = 0;
@@ -234,6 +281,12 @@ class App extends React.Component {
     
     const opcao = 1;
     this.setState({render: opcao})
+    this.setState({
+      id: "",
+      nome: "",
+      email: ""
+
+    })
     this.getDados()
   }
 
@@ -259,17 +312,17 @@ class App extends React.Component {
           return(
             <Render>
               <BotaoLista onClick={this.vaiPraLista}>ir para a lista</BotaoLista>
-              <Container>
+              <ContainerEntrada>
                 <ContainerNome>
                   <label>Nome:</label>
-                  <EntradaNome value={this.state.nome} onChange={this.entradaNome}></EntradaNome>
+                  <EntradaNome value={this.state.nome} onChange={this.entradaNome}/>
                 </ContainerNome>
                 <ContainerEmail>
                   <label>Email:</label>
-                  <EntradaEmail value={this.state.email} onChange={this.entradaEmail}></EntradaEmail>
+                  <EntradaEmail value={this.state.email} onChange={this.entradaEmail}/>
                 </ContainerEmail>
                 <BotaoSalvar onClick={this.criaUsuario}>Salvar</BotaoSalvar>
-              </Container>
+              </ContainerEntrada>
             </Render>
           )
         break;
@@ -277,8 +330,21 @@ class App extends React.Component {
         case 1:
           return (
             <Render>
-              <BotaoEntrada onClick={this.vaiPraEntrada}>volta para entrada</BotaoEntrada>
-              <ContainerLista>
+              <Nav>
+                <BotaoEntrada onClick={this.vaiPraEntrada}>volta para entrada</BotaoEntrada>
+                <ContainerBusca>
+                  <ContainerNomeBusca>
+                    <label>Nome: <EntradaNome value={this.state.nome} onChange={this.entradaNome}/></label>
+                    
+                  </ContainerNomeBusca>
+                  <ContainerEmailBusca>
+                    <label>Email: <EntradaEmail value={this.state.email} onChange={this.entradaEmail}/></label>
+                    
+                  </ContainerEmailBusca>
+                  <BotaoBuscar onClick={this.buscarUsario}>Buscar</BotaoBuscar>
+                </ContainerBusca>
+              </Nav>
+              <ContainerLista>             
                 <h2>Usuários Cadastrados:</h2>
                 {this.state.dados.map(dados =>(
                   <Item key={dados.id}>
@@ -288,8 +354,7 @@ class App extends React.Component {
                   <hr></hr>
                 </Item>
                 ))}
-              </ContainerLista>
-              
+              </ContainerLista> 
             </Render>
             )
         break
@@ -322,7 +387,7 @@ class App extends React.Component {
 
                  </ContainerItem>                  
               </ContainerLista>
-              <Container>
+              <ContainerEntrada>
                 <ContainerNome>
                   <label>Nome:</label>
                   <EntradaNome value={this.state.nomeEditar} onChange={this.entradaNomeEditar}></EntradaNome>
@@ -332,7 +397,7 @@ class App extends React.Component {
                   <EntradaEmail value={this.state.emailEditar} onChange={this.entradaEmailEditar}></EntradaEmail>
                 </ContainerEmail>
                 <BotaoSalvar onClick={this.editarUsuario}>Salvar</BotaoSalvar>
-              </Container>
+              </ContainerEntrada>
               
             </Render>
             

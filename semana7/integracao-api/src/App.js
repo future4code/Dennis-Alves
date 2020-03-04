@@ -73,6 +73,7 @@ const EntradaNome = styled.input`
 const EntradaEmail = styled.input`
 
 `
+var baseUrl = "https://us-central1-future4-users.cloudfunctions.net/api/users"
 
 class App extends React.Component {
   constructor(props){
@@ -82,15 +83,16 @@ class App extends React.Component {
       dados: [],
       msgErro: undefined,
       render: 0,
+      id:"",
       nome:"",
       email:""
     }
   }
-
+  
   componentDidMount(){
     this.getDados()
   }
-
+  
   entradaNome = e =>{
     this.setState({nome: e.target.value})
   }
@@ -101,7 +103,7 @@ class App extends React.Component {
 
   getDados = () =>{
     
-    const request = axios.get("https://us-central1-future4-users.cloudfunctions.net/api/users/getAllUsers", {
+    const request = axios.get(`${baseUrl}/getAllUsers`, {
       headers: {
         "api-token": "Dennis"
       }
@@ -120,7 +122,7 @@ class App extends React.Component {
       email: this.state.email
     }
     
-    const request = axios.post("https://us-central1-future4-users.cloudfunctions.net/api/users/createUser",enviaDados, {
+    const request = axios.post(`${baseUrl}/createUser`,enviaDados, {
       headers: {
         "api-token": "Dennis"
       }
@@ -138,8 +140,8 @@ class App extends React.Component {
   }
   deletaUsuario = (id) =>{
     if(prompt("Tem certeza de que deseja deletar?") === "s"){
-      const url = "https://us-central1-future4-users.cloudfunctions.net/api/users/deleteUser?id=" + id
-      const request = axios.delete(url, {
+     
+      const request = axios.delete(`${baseUrl}/deleteUser?id=${id}`, {
         headers: {
           "api-token": "Dennis"
         }
@@ -147,7 +149,8 @@ class App extends React.Component {
       request.then((response)=>{
         window.alert("usuario deletado!")
         this.setState({
-          dados: []
+          dados: [],
+          render: 1
         })
         this.getDados()
       }).catch((erro)=>{
@@ -156,19 +159,51 @@ class App extends React.Component {
       })
     }
     
-    
   }
+  mostrarUsuario = (id)=>{
+    const request = axios.get(`${baseUrl}/getUser/${id}`,{
+      headers: {
+        "api-token": "Dennis"
+      }
+    })
+
+    request.then((response)=>{
+      
+      this.setState({
+        id: response.data.result.id,
+        nome: response.data.result.name,
+        email: response.data.result.email
+      })
+      this.getDados()
+    }).catch((erro)=>{
+      window.alert("não foi possivel carregar o usuario o usuario")
+      console.log(erro)
+    })
+
+  }
+
+  vaiPraEntrada=()=>{
+    
+    const opcao = 0;
+    this.setState({render: opcao})
+  }
+
   vaiPraLista=()=>{
     
     const opcao = 1;
     this.setState({render: opcao})
     this.getDados()
   }
-  vaiPraEntrada=()=>{
-    
-    const opcao = 0;
+
+  vaiParaDetalhes=(id)=>{
+    const opcao = 2;
     this.setState({render: opcao})
+    this.mostrarUsuario(id)
+
   }
+
+  
+
   render(){
       
       switch(this.state.render){
@@ -200,7 +235,7 @@ class App extends React.Component {
                 {this.state.dados.map(dados =>(
                   <Item key={dados.id}>
                     <ContainerItem>
-                      <Nome>{dados.name}</Nome> <spam onClick={()=>this.deletaUsuario(dados.id)}>deleta</spam>
+                      <Nome onClick={()=>this.vaiParaDetalhes(dados.id)}>{dados.name}</Nome> <spam onClick={()=>this.deletaUsuario(dados.id)}>deleta</spam>
                     </ContainerItem>
                   <hr></hr>
                 </Item>
@@ -210,6 +245,23 @@ class App extends React.Component {
             </Render>
             )
         break
+        case 2:
+          return (
+            <Render>
+              <BotaoEntrada onClick={this.vaiPraLista}>volta para lista</BotaoEntrada>
+              <ContainerLista>
+                <h2>Detalhes do Usuário: {this.state.nome}</h2>
+            
+                 <ContainerItem>
+                  <Nome>{this.state.nome}</Nome> {this.state.email}<spam onClick={()=>this.deletaUsuario(this.state.id)}>deleta</spam>
+                 </ContainerItem>
+                  
+              </ContainerLista>
+              
+            </Render>
+            )
+        break
+
 
       }
       

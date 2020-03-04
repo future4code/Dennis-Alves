@@ -137,22 +137,25 @@ class App extends React.Component {
     })
   }
   deletaUsuario = (id) =>{
-    const url = "https://us-central1-future4-users.cloudfunctions.net/api/users/deleteUser?id=" + id
-    const request = axios.delete(url, {
-      headers: {
-        "api-token": "Dennis"
-      }
-    })
-    request.then((response)=>{
-      window.alert("usuario deletado!")
-      this.setState({
-        dados: []
+    if(prompt("Tem certeza de que deseja deletar?") === "s"){
+      const url = "https://us-central1-future4-users.cloudfunctions.net/api/users/deleteUser?id=" + id
+      const request = axios.delete(url, {
+        headers: {
+          "api-token": "Dennis"
+        }
       })
-      this.getDados()
-    }).catch((erro)=>{
-      window.alert("não foi possivel deletar o usuario")
-      console.log(erro)
-    })
+      request.then((response)=>{
+        window.alert("usuario deletado!")
+        this.setState({
+          dados: []
+        })
+        this.getDados()
+      }).catch((erro)=>{
+        window.alert("não foi possivel deletar o usuario")
+        console.log(erro)
+      })
+    }
+    
     
   }
   vaiPraLista=()=>{

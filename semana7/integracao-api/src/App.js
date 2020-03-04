@@ -27,6 +27,9 @@ const BotaoEntrada = styled.button`
   align-self: flex-start;
   margin: 5px;
 `
+const BotaoEditar = styled.button`
+
+`
 
 const Item = styled.ul`
  text-decoration: none;
@@ -85,7 +88,9 @@ class App extends React.Component {
       render: 0,
       id:"",
       nome:"",
-      email:""
+      email:"",
+      nomeEditar: "",
+      emailEditar: ""
     }
   }
   
@@ -99,6 +104,13 @@ class App extends React.Component {
 
   entradaEmail = e =>{
     this.setState({email: e.target.value})
+  }
+  entradaNomeEditar = e =>{
+    this.setState({nomeEditar: e.target.value})
+  }
+
+  entradaEmailEditar = e =>{
+    this.setState({emailEditar: e.target.value})
   }
 
   getDados = () =>{
@@ -181,6 +193,36 @@ class App extends React.Component {
     })
 
   }
+  editarUsuario=()=>{
+    const data = {
+      "user": {
+        "id": this.state.id,
+        "name": this.state.nomeEditar,
+        "email": this.state.emailEditar
+      }
+    }
+
+    if (data.user.email===""){
+        data.user.email = this.state.email
+    }
+    if (data.user.name===""){
+      data.user.name = this.state.nome
+  }
+    const request = axios.put(`${baseUrl}/editUser`,data,{
+      headers: {
+        "api-token": "Dennis"
+      }
+    
+    })
+    request.then((response)=>{
+      window.alert(`usuario ${this.state.nome} Editado!`)
+      this.vaiParaDetalhes(this.state.id)
+      this.getDados()
+    }).catch((erro)=>{
+      window.alert("não foi possivel editar o usuario")
+      console.log(erro)
+    })
+  }
 
   vaiPraEntrada=()=>{
     
@@ -199,6 +241,12 @@ class App extends React.Component {
     const opcao = 2;
     this.setState({render: opcao})
     this.mostrarUsuario(id)
+
+  }
+  vaiParaEditar=(id)=>{
+    const opcao = 3;
+    this.setState({render: opcao})
+    
 
   }
 
@@ -254,14 +302,42 @@ class App extends React.Component {
             
                  <ContainerItem>
                   <Nome>{this.state.nome}</Nome> {this.state.email}<spam onClick={()=>this.deletaUsuario(this.state.id)}>deleta</spam>
+                  <BotaoEditar onClick={()=>this.vaiParaEditar(this.state.id)}>Editar</BotaoEditar> 
                  </ContainerItem>
-                  
+                 
               </ContainerLista>
               
             </Render>
             )
         break
+        case 3:
+          return(
+            <Render>
+              <BotaoEntrada onClick={this.vaiPraLista}>volta para lista</BotaoEntrada>
+              <ContainerLista>
+                <h2>Editar Usuário:  {this.state.nome}</h2>
+            
+                 <ContainerItem>
+                  <Nome>{this.state.nome}</Nome> {this.state.email}<spam onClick={()=>this.deletaUsuario(this.state.id)}>deleta</spam>
 
+                 </ContainerItem>                  
+              </ContainerLista>
+              <Container>
+                <ContainerNome>
+                  <label>Nome:</label>
+                  <EntradaNome value={this.state.nomeEditar} onChange={this.entradaNomeEditar}></EntradaNome>
+                </ContainerNome>
+                <ContainerEmail>
+                  <label>Email:</label>
+                  <EntradaEmail value={this.state.emailEditar} onChange={this.entradaEmailEditar}></EntradaEmail>
+                </ContainerEmail>
+                <BotaoSalvar onClick={this.editarUsuario}>Salvar</BotaoSalvar>
+              </Container>
+              
+            </Render>
+            
+          )
+        break
 
       }
       

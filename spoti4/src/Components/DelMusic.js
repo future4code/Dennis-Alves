@@ -2,22 +2,39 @@ import React,{Component} from 'react';
 import axios from 'axios'
 import styled from 'styled-components'
 
-const Delete = styled.button`
-
+const baseUrl = "https://us-central1-spotif4.cloudfunctions.net/api"
+const Delete = styled.p`
+    color:red;
+    margin-left:10px;
+    width:max-content;
 `
 
-class PlayListDetails extends Component{
+class DelMusic extends Component{
     constructor(props){
         super (props)
-        this.state={
-            musicId: this.props.musicId, 
-            listId: this.props.listId
-        }
+
  }
 
+ delMusic = async (musicId,listId)=>{
+    try{
+        await axios.delete(`${baseUrl}/playlists/removeMusicFromPlaylist?playlistId=${listId}&musicId=${musicId}`,{
+           headers: {    
+               "auth": "Dennis"
+           }
+       })
+       window.alert("Musica deletada!!")
+       window.location.reload(true);
+    }catch(error){
+        console.log(error)
+    }
+  }
+ 
     render(){
-       <Delete onClick={}></Delete>     
+        return(
+            <Delete onClick={()=>this.delMusic(this.props.musicId,this.props.listId)}>Remove</Delete>
+        )
+            
     }
 
 }
-export default PlayListDetails;
+export default DelMusic;

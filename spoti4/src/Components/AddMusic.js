@@ -3,6 +3,31 @@ import axios from 'axios'
 import styled from 'styled-components'
 import PlayListDetails from './PlayListDetails'
 const InputMusicContainer = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+`
+const InputMusicWrapper = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    width: 250px;
+    margin-top:20px;
+`
+const ImputWrapperNome = styled.div`
+    display:flex;
+    flex-direction:column;
+
+`
+
+const ImputWrapperArtist = styled.div`
+    display:flex;
+    flex-direction:column;
+`
+
+const ImputWrapperUrl  = styled.div`
+    display:flex;
+    flex-direction:column;
 
 `
 
@@ -34,6 +59,7 @@ inputUrl= e =>{
     this.setState({url: e.target.value})
 }
 componentDidMount(){
+    
     this.getMusicList(this.props.baseUrl,this.props.listId,this.props.nameList)
 }
 
@@ -47,7 +73,6 @@ getMusicList = async (baseUrl,id,nameList) =>{
                     "auth": "Dennis"
                 }
             })
-            
             this.setState({playList: response.data.result})
      }catch(error){
          
@@ -116,8 +141,6 @@ addMusic = async (baseUrl,id,nameList)=>{
 
 
         }  
-    
-    
 }
 
     render(){
@@ -126,10 +149,13 @@ addMusic = async (baseUrl,id,nameList)=>{
                           
                 <InputMusicContainer>
                     <PlayListDetails playList={this.state.playList} listId={this.state.listId}/>
-                    nome:<input value={this.state.name} onChange={this.inputName}/>
-                    artista:<input value={this.state.artist} onChange={this.inputArtist}/>
-                    url:<input value={this.state.url} onChange={this.inputUrl}/>
-                    <button onClick={()=>this.addMusic(this.props.baseUrl,this.props.listId,this.props.nameList)} >salvar</button>
+                    <InputMusicWrapper>
+                        <h4>Adicionar nova musica.</h4>
+                        <ImputWrapperNome>Nome <input value={this.state.name} onChange={this.inputName}/></ImputWrapperNome>
+                        <ImputWrapperArtist>Artista <input value={this.state.artist} onChange={this.inputArtist}/></ImputWrapperArtist>
+                        <ImputWrapperUrl>Url <input value={this.state.url} onChange={this.inputUrl}/></ImputWrapperUrl>    
+                    </InputMusicWrapper>
+                    <p onClick={()=>this.addMusic(this.props.baseUrl,this.props.listId,this.props.nameList)} >Salvar</p>
                 </InputMusicContainer>
             
         )

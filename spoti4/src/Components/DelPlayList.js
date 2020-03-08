@@ -2,14 +2,13 @@ import React,{Component} from 'react';
 import axios from 'axios'
 import styled from 'styled-components'
 
-const Delete = styled.button`
-
+const Delete = styled.div`
+margin-left:15px;
 `
 const baseUrl = "https://us-central1-spotif4.cloudfunctions.net/api"
 class DelPlayList extends Component{
     constructor(props){
-        super (props)
-        
+        super (props)     
  }
  delList = async (baseUrl,idList)=>{
   
@@ -28,7 +27,7 @@ class DelPlayList extends Component{
 
     render(){
         return(
-            <Delete onClick={()=>this.delList(baseUrl,this.props.idList)}>Deleta</Delete> 
+            <Delete onClick={()=>this.delList(baseUrl,this.props.idList)}>Remove</Delete> 
         )
            
     }

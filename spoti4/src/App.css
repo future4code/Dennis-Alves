@@ -1,7 +1,14 @@
 .App {
-  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background:none;
 }
-
+input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

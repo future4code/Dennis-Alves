@@ -7,9 +7,32 @@ import styled from 'styled-components'
 import axios from 'axios'
 const baseUrl = "https://us-central1-spotif4.cloudfunctions.net/api"
 
-const AllPlayListContainer = styled.div`
 
+const Head = styled.div`
+display:flex;
+flex-direction:row;
+align-items:center;
 `
+const AllPlayListContainer = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+`
+const ListWrapper = styled.div`
+  display:flex;
+  flex-direction: column;
+  width:max-content;
+`
+const List = styled.div`
+  display:flex;
+  flex-direction:row;
+  align-content:center;
+  align-self:center;
+`
+const Edit = styled.i`
+  margin-left: 20px;
+`
+
 class App extends Component{
   constructor(props){
     super (props)
@@ -19,6 +42,7 @@ class App extends Component{
         listId: "",
         nameList:"",
         playList: undefined,
+        musicPlayList: undefined,
   
       }
   }
@@ -49,9 +73,6 @@ listDetails = (id,nameList)=>{
 }
 
   render(){
-    
-    console.log(this.state.playList)
-    console.log(this.state.render)
     const page = this.state.render
     
     switch(page){
@@ -60,22 +81,31 @@ listDetails = (id,nameList)=>{
         if(this.state.playList !== undefined && this.state.playList.result.quantity !== 0){
           
           return (
-            <div>
-             <InputNameListContainer baseUrl={baseUrl}></InputNameListContainer>
+            <div class="App">
+              <Head>
+                <h3>Spoti4</h3><InputNameListContainer baseUrl={baseUrl}></InputNameListContainer>
+              </Head>
+             
              <AllPlayListContainer>
+              <h2>Listas</h2>
+               <ListWrapper>
+                
                   {this.state.playList.result.list.map(list=>(
-                        <p><b onClick={()=>this.listDetails(list.id,list.name)}>{list.name}</b> <Delete baseUrl={baseUrl} idList={list.id}></Delete> </p> 
+                        <List><b>{list.name}</b><Edit onClick={()=>this.listDetails(list.id,list.name)}>Editar</Edit> <Delete baseUrl={baseUrl} idList={list.id}></Delete> </List>
+                        
                     ))}
+               </ListWrapper>
+                  
               </AllPlayListContainer>
             </div>
           )
         }
         else if(this.state.playList !== undefined){
       return (
-        <div>
+        <div class="App">
          <InputNameListContainer baseUrl={baseUrl}></InputNameListContainer>       
             <AllPlayListContainer>
-                <p>Nao existe nenhum item na lista ainda</p>
+                <p>Nao existe nenhuma lista...</p>
             </AllPlayListContainer>
         </div>
           )
@@ -88,19 +118,20 @@ listDetails = (id,nameList)=>{
         )
       }
     
-      break
+      break;
       case 2:
-        console.log(this.state.listId)
-        
-      return (
-        <div> 
-          <InputMusicContainer baseUrl={baseUrl} listId={this.state.listId} nameList={this.state.nameList}>
-            
-          </InputMusicContainer>
-             
-        </div>
-      );
-      break
+     
+        return (
+          <div class="App">
+              <h2> Lista: {this.state.nameList}</h2>
+            <InputMusicContainer baseUrl={baseUrl} listId={this.state.listId} nameList={this.state.nameList}/>
+            <span onClick={()=>this.setState({render: 1})}>voltar</span>
+          </div>
+        )
+      break;
+
+      default:
+      
     }
     
   }

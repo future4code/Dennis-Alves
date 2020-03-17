@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components'
+import TaskList from './Components/TaskList';
+import InputTask from './Components/InputTask';
+import Button from '@material-ui/core/Button';
+
 
 const Content = styled.div`
 display:flex;
@@ -27,7 +31,7 @@ class App extends Component{
     this.state={
       
       taskList: [
-        {id: 1, done:false, name:"teste1"},
+        {id: 1, done:true, name:"teste1"},
         {id: 12, done:false, name:"teste2"},
         {id: 123, done:false, name:"teste3"},
       ],
@@ -37,15 +41,14 @@ class App extends Component{
     return(
       <Content>
         <Wrapper>
-          <input placeholder="Digite sua tarefa..."></input>
-          <div>{this.state.taskList.map(task=>(
-            <p> <input type="checkbox" defaultChecked={task.done} onChange={this.changeCheck} />{task.name}</p>
-          ))}</div>
+            <InputTask></InputTask>
+            <TaskList taskList={this.state.taskList} ></TaskList>
           <Options>
-              <p>Marcar Todas Como Completa</p>
-              <p>Todas</p>
-              <p>Pendentes</p>
-              <p>Completas</p>
+            <span>Marcar Todas Completas</span>
+            <Button color="primary">Todas</Button>
+            <Button color="primary">Pendentes</Button>
+            <Button color="primary">Completas</Button>
+            <span>Marcar Todas Completas</span>
           </Options>
         </Wrapper>
       </Content>

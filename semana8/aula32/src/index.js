@@ -9,7 +9,6 @@ import rootReduce from './Reducers'
 import { createGlobalStyle } from "styled-components";
 
 const store = createStore(rootReduce)
-
 const GlobalStyle = createGlobalStyle`
   body {
     background: grey;

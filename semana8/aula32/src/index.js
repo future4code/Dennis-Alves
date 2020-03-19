@@ -11,7 +11,12 @@ import { createGlobalStyle } from "styled-components";
 const store = createStore(rootReduce)
 const GlobalStyle = createGlobalStyle`
   body {
-    background: grey;
+    background: white;
+  }
+  :root{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
   }
 `;
 

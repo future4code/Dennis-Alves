@@ -2,28 +2,34 @@ import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components'
 import TaskList from './Components/TaskList';
-import InputTask from './Components/InputTask';
-import Button from '@material-ui/core/Button';
-
-
-const Content = styled.div`
-display:flex;
-justify-content:center;
-`
+import InputTask from './Components/TaskForm';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux';
+import Toolbar from './Components/ToolBar'
+import rootReduce from './Reducers'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import orange from '@material-ui/core/colors/orange';
+import green from '@material-ui/core/colors/green';
 
 const Wrapper = styled.div`
+
 display:flex;
 flex-direction:column;
 justify-content:center;
-width:35%;
-margin: 15px;
-`
-const Options = styled.div`
-display:flex;
-justify-content:space-between;
 
 `
 
+const theme = createMuiTheme({
+  palette: {
+    primary: orange,
+    secondary: green,
+  },
+  status: {
+    danger: 'orange',
+  },
+});
+
+const store = createStore(rootReduce);
 
 class App extends Component{
   constructor(props){
@@ -38,21 +44,20 @@ class App extends Component{
     }
   }
   render(){
-    return(
-      <Content>
-        <Wrapper>
-            <InputTask></InputTask>
-            <TaskList taskList={this.state.taskList} ></TaskList>
-          <Options>
-            <span>Marcar Todas Completas</span>
-            <Button color="primary">Todas</Button>
-            <Button color="primary">Pendentes</Button>
-            <Button color="primary">Completas</Button>
-            <span>Marcar Todas Completas</span>
-          </Options>
-        </Wrapper>
-      </Content>
+    
+      return(
+        <Provider store={store}>
+          <MuiThemeProvider theme={theme}>
+          <Wrapper>
+              <InputTask></InputTask>
+              <TaskList taskList={this.state.taskList} ></TaskList>
+              <Toolbar></Toolbar>
+          </Wrapper>
+          </MuiThemeProvider>
+        </Provider>   
     )
+   
+    
   }
 }
 export default App;

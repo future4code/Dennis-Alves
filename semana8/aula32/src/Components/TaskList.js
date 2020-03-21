@@ -6,8 +6,9 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import Checkbox from '@material-ui/core/Checkbox';
 import { connect } from 'react-redux';
 import LinearIndeterminate from './LoadingBar'
-import {toggleTask, deleteTask,filter} from '../Actions/index'
+import {toggleTask, delTask,filter, fetchTasks,changeToggle, delAllTasks} from '../Actions/index'
 import styled from 'styled-components';
+
 
 const List = styled.ul`
   list-style-type:none;
@@ -15,6 +16,17 @@ const List = styled.ul`
 
 
 class TaskList extends React.Component {
+  componentDidMount(){
+    this.props.fetchTasks()
+  }
+  handleCheck=(e)=>{
+    
+    this.props.changeToggle(e.target.value) 
+    // devido a propriedade do componente do material ui Checkbox quando a função de marcar como feita a tarefa se tornou recursiva
+    // o ato de mudar o estado dela chama a função que muda o estado dela, a solução seria usar um botão e usar  onClick mas perde a 
+    // utilidade desse componente achei que para o render  seria uma opção... mas não sei fazer isso... se possivel me da uma luz!!!
+   
+  }
   render(){
     console.log(this.props.taskList)
     
@@ -38,10 +50,10 @@ class TaskList extends React.Component {
                 return true
               }).map(task =>
               <li  key={task.id}>
-                <Checkbox  color="primary" checked={task.done} onChange={()=>this.props.toggleTask(task.id)}/>
+                <Checkbox  color="primary" checked={task.done} value={task.id} onChange={this.handleCheck}/>
                 {task.text}
                 <IconButton
-                onClick={()=> this.props.deleteTask(task.id)}><DeleteIcon /></IconButton>
+                onClick={()=> this.props.delTask(task.id)}><DeleteIcon /></IconButton>
               </li> 
              )}   
             </List>  
@@ -50,9 +62,11 @@ class TaskList extends React.Component {
       );
     }
     else{
+      this.componentDidMount()
       return(
         <LinearIndeterminate></LinearIndeterminate>
       )
+      
     }
   }
   
@@ -65,9 +79,12 @@ const mapStateToProps = (state) =>{
   }
 }
 const mapDispatchToProps = (dispatch) =>{
+  
   return{
     toggleTask: (id) => dispatch(toggleTask(id)),
-    deleteTask: (id) => dispatch(deleteTask(id))
+    delTask: (id) => dispatch(delTask(id)),
+    changeToggle:(id) => dispatch(changeToggle(id)),
+    fetchTasks: () => dispatch(fetchTasks()),
   }
 }
 

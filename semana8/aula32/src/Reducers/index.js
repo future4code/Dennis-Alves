@@ -1,5 +1,6 @@
-import { combineReducers} from 'redux';
+import { combineReducers, applyMiddleware} from 'redux';
 import { todos } from './todos'
+
 
 export const rootReduce = combineReducers({
     todos

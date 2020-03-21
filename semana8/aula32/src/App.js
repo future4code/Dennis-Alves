@@ -4,13 +4,13 @@ import styled from 'styled-components'
 import TaskList from './Components/TaskList';
 import InputTask from './Components/TaskForm';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import Toolbar from './Components/ToolBar'
 import rootReduce from './Reducers'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import orange from '@material-ui/core/colors/orange';
 import green from '@material-ui/core/colors/green';
-
+import thunk from 'redux-thunk'
 const Wrapper = styled.div`
 
 display:flex;
@@ -29,7 +29,7 @@ const theme = createMuiTheme({
   },
 });
 
-const store = createStore(rootReduce);
+const store = createStore(rootReduce,applyMiddleware(thunk));
 
 class App extends Component{
   constructor(props){

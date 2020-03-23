@@ -2,7 +2,7 @@ import React from 'react';
 import Input from '@material-ui/core/Input';
 import { Button, FormGroup } from '@material-ui/core';
 import { connect } from 'react-redux';
-import { addTask } from '../Actions';
+import { createTask } from '../Actions/index';
 
 class TaskForm extends React.Component{
   constructor(props){
@@ -16,8 +16,9 @@ class TaskForm extends React.Component{
     this.setState({inputText: e.target.value})
   }
 
-  onClickAdd = () =>{
-    this.props.addTask(this.state.inputText)
+  onClickAdd = () =>{ 
+    this.props.createTask(this.state.inputText)
+    this.setState({inputText: ""})
   }
 
   render(){
@@ -36,8 +37,9 @@ const mapStateToProps = (state) =>{
 }
 
 const mapDispatchToProps = (dispatch)=>{
+  
   return {
-    addTask: text =>  dispatch(addTask(text))
+    createTask: (text) =>  dispatch(createTask(text))
     }
   }
 

@@ -62,7 +62,7 @@ class TaskList extends React.Component {
       );
     }
     else{
-      this.componentDidMount()
+      //this.componentDidMount()
       return(
         <LinearIndeterminate></LinearIndeterminate>
       )

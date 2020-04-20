@@ -85,7 +85,7 @@ export const addTask = text => {
     const result = await axios.put(
         `https://us-central1-missao-newton.cloudfunctions.net/reduxTodo/dennis/todos/${id}/toggle`
       );
-    dispatch(changeToggle(id));
+    dispatch(fetchTasks());
   };
 
 
@@ -93,7 +93,7 @@ export const addTask = text => {
     const result = await axios.delete(
         `https://us-central1-missao-newton.cloudfunctions.net/reduxTodo/dennis/todos/${id}`
       );
-    dispatch(deleteTask(id));
+    dispatch(fetchTasks());
   };
   export const delAllTasks = () => async (dispatch, getState) => {
     const result = await axios.delete(

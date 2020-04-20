@@ -1,9 +1,9 @@
 import { combineReducers, applyMiddleware} from 'redux';
-import { todos } from './todos'
+import { trips,login } from './todos'
 
 
 export const rootReduce = combineReducers({
-    todos
+    trips,login
 })
 
 export default rootReduce;

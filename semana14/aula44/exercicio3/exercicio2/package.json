@@ -5,7 +5,7 @@
   "main": "exercicio2.js",
   "scripts": {
     "test": "jest",
-    "start": "node exercicio2.js tarefa comprar pao"
+    "start": "node exercicio2.js"
   },
   "keywords": [
     "projeto",

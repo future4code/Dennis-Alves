@@ -5,7 +5,7 @@
   "main": "exercicio1.js",
   "scripts": {
     "test": "jest",
-    "start": "node exercicio1.js sum 3 2"
+    "start": "node exercicio1.js"
   },
   "keywords": [
     "projeto",

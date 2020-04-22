@@ -1,0 +1,17 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "exercicio 2",
+  "main": "exercicio2.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node exercicio2.js tarefa comprar pao"
+  },
+  "keywords": [
+    "projeto",
+    "exercicio",
+    "2"
+  ],
+  "author": "Dennis",
+  "license": "ISC"
+}

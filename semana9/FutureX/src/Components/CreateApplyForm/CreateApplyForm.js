@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import{fetchTrips,apply} from '../../Actions/index.js'
 import { connect } from "react-redux";
 import ListTripsForm from "../../Components/ListTripsForm/ListTripsForm";
+import {TextValidator} from 'react-material-ui-form-validator';
 
 const InputWraper = styled.div`
   display:flex;
@@ -295,7 +296,7 @@ export class CreateApplyForm extends Component {
 
                     </Select>
                     <InputWraper>
-                        <TextField
+                        <TextValidator
                             id="name"
                             name="name"
                             type="text"
@@ -303,6 +304,7 @@ export class CreateApplyForm extends Component {
                             inputProps={{ pattern: "(?![ .]+$)[a-zA-Z .]{3,}" }}
                             helperText="O nome do Candidato deve conter no mínimo 3 letras."
                             required
+                            errorMessages={['this field is required', 'email is not valid']}
                             onChange={this.handleInputChange}
                         />
                         <TextField

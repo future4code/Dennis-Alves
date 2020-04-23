@@ -1,0 +1,17 @@
+{
+  "name": "exercicio1",
+  "version": "1.0.0",
+  "description": "exercicio 1",
+  "main": "exercicio1.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node exercicio1.js"
+  },
+  "keywords": [
+    "projeto",
+    "exercicio",
+    "1"
+  ],
+  "author": "Dennis",
+  "license": "ISC"
+}

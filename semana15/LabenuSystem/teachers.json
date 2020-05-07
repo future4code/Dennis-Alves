@@ -1,0 +1,38 @@
+[
+  {
+    "id": "Faf3WL",
+    "name": "testeTeacher1",
+    "email": "testeTeacher1",
+    "specialties": [
+      "OOP",
+      "BACKEND"
+    ]
+  },
+  {
+    "id": "qLsvAp",
+    "name": "testeTeacher2",
+    "email": "testeTeacher2",
+    "specialties": [
+      "REACT",
+      "BACKEND"
+    ]
+  },
+  {
+    "id": "E08ffx",
+    "name": "testeTeacher3",
+    "email": "testeTeacher3",
+    "specialties": [
+      "CSS",
+      "BACKEND"
+    ]
+  },
+  {
+    "id": "EqjyG9",
+    "name": "testeTeacher4",
+    "email": "testeTeacher4",
+    "specialties": [
+      "TESTES",
+      "BACKEND"
+    ]
+  }
+]

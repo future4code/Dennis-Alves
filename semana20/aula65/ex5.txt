@@ -1,0 +1,43 @@
+
+CREATE TABLE `cartoon_char` (
+  `id` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `nickname` varchar(255) NOT NULL,
+  `imglink` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+exports.handler = async (event) => {
+    
+    if (!event.cartoonChar.name || event.cartoonChar.name === "") {
+        return {body: JSON.stringify(
+        {
+        	"Error Message": "Personagem sem nome."
+        })
+      }}
+      
+    else  if (!event.cartoonChar.nickname || event.cartoonChar.nickname === "") {
+        return {body: JSON.stringify(
+        {
+        	"Error Message": "Personagem sem nome de cartoon."
+        })
+      }}
+      
+    else  if (!event.cartoonChar.imglink || event.cartoonChar.imglink === "") {
+        return {body: JSON.stringify(
+        {
+        	"Error Message": "Personagem sem link de foto."
+        })
+      }}
+      
+    else  {
+        return {
+            statusCode: 200,
+            body: JSON.stringify(
+        {
+        	"Success Message": "Personagem adicionado com sucesso!"
+        })
+      }}
+    
+};
+​

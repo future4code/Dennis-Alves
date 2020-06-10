@@ -1,0 +1,10 @@
+exports.handler = async (event) => {
+    // TODO implement
+    const response = {
+        body: JSON.stringify({
+            result: Number(event.number1) + Number(event.number2)
+        })
+    }
+    
+    return response;
+};
